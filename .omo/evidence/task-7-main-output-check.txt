@@ -1,0 +1,11 @@
+YOLO26n product-recognition tutorial
+
+Start with the notebook: notebooks/01_product_detection_yolo26n.ipynb
+
+Recommended smoke commands to copy and run:
+- python -m py_compile main.py scripts/validate_yolo_dataset.py
+- python scripts/validate_yolo_dataset.py --data data/product_dataset.yaml --allow-empty
+- python -c "import ultralytics; print(ultralytics.__version__)"
+- jupyter nbconvert --to notebook --execute notebooks/01_product_detection_yolo26n.ipynb --output /tmp/yolo26n_product_smoke.ipynb
+
+This launcher is guidance-only: it does not train, download weights, or require a GPU.

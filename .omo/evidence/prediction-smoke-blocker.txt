@@ -1,0 +1,10 @@
+Task 7 prediction smoke blocker
+
+Command attempted:
+python -c "from pathlib import Path; from PIL import Image; from ultralytics import YOLO; img = Path('.omo/evidence/prediction-smoke-input.jpg'); img.parent.mkdir(parents=True, exist_ok=True); Image.new('RGB', (320, 320), color='white').save(img); YOLO('yolo26n.pt').predict(source=str(img), save=True, project='.omo/evidence/prediction-smoke', name='predict', exist_ok=True); assert any(Path('.omo/evidence/prediction-smoke/predict').glob('*')); print('prediction artifact ok')"
+
+Observed result:
+ModuleNotFoundError: No module named 'ultralytics'
+
+Why this is a blocker:
+The smoke cannot import Ultralytics, so it cannot load yolo26n.pt or create prediction artifacts. This blocker records the failure directly instead of silently skipping the model-load/prediction check.

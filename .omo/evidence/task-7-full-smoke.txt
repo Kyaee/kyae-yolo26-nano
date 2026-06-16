@@ -1,0 +1,27 @@
+Task 7 full smoke validation
+
+Passed:
+- python main.py > .omo/evidence/task-7-main-acceptance.txt
+  Output mentions notebooks/01_product_detection_yolo26n.ipynb and four smoke commands.
+- python -m py_compile main.py scripts/validate_yolo_dataset.py
+  Exit 0; no compiler output.
+- python scripts/validate_yolo_dataset.py --data data/product_dataset.yaml --allow-empty
+  Output: dataset yaml ok: 3 class(es), 0 image(s), root=/home/kyae-dev/Repos/self/yolo26-nano/data/products (allow-empty scaffold)
+- python -c "from pathlib import Path; text = Path('.omo/evidence/task-7-main-acceptance.txt').read_text(); assert 'notebooks/01_product_detection_yolo26n.ipynb' in text; assert text.count('- ') >= 3; assert 'python -m py_compile' in text; assert 'validate_yolo_dataset.py' in text; assert 'jupyter nbconvert' in text; print('main launcher output ok')"
+  Output: main launcher output ok
+- test ! -d runs/detect/train
+  Exit 0; python main.py did not create a training output directory.
+
+Blocked in this environment:
+- python -c "import ultralytics; print(ultralytics.__version__)"
+  Error recorded in .omo/evidence/task-7-ultralytics-import.txt: ModuleNotFoundError: No module named 'ultralytics'
+- jupyter nbconvert --to notebook --execute notebooks/01_product_detection_yolo26n.ipynb --output /tmp/yolo26n_product_smoke.ipynb
+  Error recorded in .omo/evidence/task-7-notebook-nbconvert.txt: zsh:1: command not found: jupyter
+- python -m nbconvert --to notebook --execute notebooks/01_product_detection_yolo26n.ipynb --output /tmp/yolo26n_product_smoke.ipynb
+  Error recorded in .omo/evidence/task-7-notebook-python-nbconvert.txt: /usr/bin/python: No module named nbconvert
+- Prediction smoke command from the Definition of Done
+  Error recorded in .omo/evidence/task-7-prediction-smoke.txt: ModuleNotFoundError: No module named 'ultralytics'
+
+Blocker files written:
+- .omo/evidence/task-7-notebook-blocker.txt
+- .omo/evidence/prediction-smoke-blocker.txt

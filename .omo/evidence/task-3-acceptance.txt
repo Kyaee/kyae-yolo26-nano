@@ -1,0 +1,7 @@
+Task 3 acceptance evidence
+- notebooks/01_product_detection_yolo26n.ipynb exists
+- notebook JSON loaded successfully
+- notebook contains yolo26n.pt
+- notebook contains CPU
+- YOLO('yolo26n.pt') availability smoke was run
+- local blocker documented because ultralytics is not installed: .omo/evidence/task-3-yolo26n-blocker.txt

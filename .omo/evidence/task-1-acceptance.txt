@@ -1,0 +1,2 @@
+Task 1 scaffold created and verified.
+Assumption: empty lesson directories are tracked with `.gitkeep` sentinels so the repo can satisfy existence checks before later notebook content is added.

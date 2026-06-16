@@ -1,0 +1,231 @@
+{
+  "schema_version": 2,
+  "active_work_id": "yolo26-nano-product-recognition-bb4bf558",
+  "works": {
+    "yolo26-nano-product-recognition-bb4bf558": {
+      "work_id": "yolo26-nano-product-recognition-bb4bf558",
+      "active_plan": "/home/kyae-dev/Repos/self/yolo26-nano/.omo/plans/yolo26-nano-product-recognition.md",
+      "plan_name": "yolo26-nano-product-recognition",
+      "status": "completed",
+      "started_at": "2026-06-14T05:35:20.514Z",
+      "updated_at": "2026-06-14T10:44:56.640Z",
+      "session_ids": [
+        "opencode:ses_13bd5573cffeppFypqtPUywzXE",
+        "opencode:ses_13b2202a3ffe1t3zRQoDuPbFkA",
+        "opencode:ses_13b220127ffe3uv3fS2bQfWz2y",
+        "opencode:ses_13b21ffd2ffe9TODaZcYNGPA7F",
+        "opencode:ses_13b21fdaeffexQ3VylC9Atqg38",
+        "opencode:ses_13b21fd73ffe8HC0j3M2cbHLI2",
+        "opencode:ses_13a7752bbffehu6TMzaW7f5ha6",
+        "opencode:ses_13a774f18ffefkgZ8xsLvKC4dG",
+        "opencode:ses_13a774c7effepQfmfphYsPwjZc",
+        "opencode:ses_13a774c27ffeTv1yA5V8S5VBKW"
+      ],
+      "session_origins": {
+        "opencode:ses_13bd5573cffeppFypqtPUywzXE": "direct",
+        "opencode:ses_13b2202a3ffe1t3zRQoDuPbFkA": "appended",
+        "opencode:ses_13b220127ffe3uv3fS2bQfWz2y": "appended",
+        "opencode:ses_13b21ffd2ffe9TODaZcYNGPA7F": "appended",
+        "opencode:ses_13b21fdaeffexQ3VylC9Atqg38": "appended",
+        "opencode:ses_13b21fd73ffe8HC0j3M2cbHLI2": "appended",
+        "opencode:ses_13a7752bbffehu6TMzaW7f5ha6": "appended",
+        "opencode:ses_13a774f18ffefkgZ8xsLvKC4dG": "appended",
+        "opencode:ses_13a774c7effepQfmfphYsPwjZc": "appended",
+        "opencode:ses_13a774c27ffeTv1yA5V8S5VBKW": "appended"
+      },
+      "agent": "atlas",
+      "task_sessions": {
+        "todo:1": {
+          "task_key": "todo:1",
+          "task_label": "1",
+          "task_title": "Create beginner project scaffold and learning guide",
+          "session_id": "opencode:ses_13b5e6277ffe3hC8QTLD74ohAf",
+          "agent": "Sisyphus-Junior",
+          "category": "writing",
+          "updated_at": "2026-06-14T05:38:24.596Z",
+          "started_at": "2026-06-14T05:38:24.596Z",
+          "status": "running"
+        },
+        "todo:2": {
+          "task_key": "todo:2",
+          "task_label": "2",
+          "task_title": "Add dataset config, dataset guide, and YOLO label validator",
+          "session_id": "opencode:ses_13b5e617fffeo0c1SK8Ks4lFL0",
+          "agent": "Sisyphus-Junior",
+          "category": "quick",
+          "updated_at": "2026-06-14T05:48:00.231Z",
+          "started_at": "2026-06-14T05:48:00.231Z",
+          "status": "running"
+        },
+        "todo:4": {
+          "task_key": "todo:4",
+          "task_label": "4",
+          "task_title": "Add data collection, Roboflow annotation, and local fallback notebook lesson",
+          "session_id": "opencode:ses_13b52c4b3ffeN6YHKElyuBV4oq",
+          "agent": "Sisyphus-Junior",
+          "category": "quick",
+          "started_at": "2026-06-14T05:51:47.479Z",
+          "status": "running",
+          "updated_at": "2026-06-14T05:53:06.814Z"
+        },
+        "todo:5": {
+          "task_key": "todo:5",
+          "task_label": "5",
+          "task_title": "Add CPU-safe training and validation tutorial cells",
+          "session_id": "opencode:ses_13b4e1d1affeMooHhdYnmOwqdH",
+          "agent": "Sisyphus-Junior",
+          "category": "unspecified-high",
+          "updated_at": "2026-06-14T05:59:06.699Z",
+          "started_at": "2026-06-14T05:59:06.699Z",
+          "status": "running"
+        },
+        "todo:6": {
+          "task_key": "todo:6",
+          "task_label": "6",
+          "task_title": "Add prediction, evidence, troubleshooting, and advanced YOLO26 note",
+          "session_id": "opencode:ses_13b48a468ffeXfTCubvf8RqH6t",
+          "agent": "Sisyphus-Junior",
+          "category": "quick",
+          "started_at": "2026-06-14T06:02:08.470Z",
+          "status": "running",
+          "updated_at": "2026-06-14T06:33:59.019Z"
+        },
+        "todo:7": {
+          "task_key": "todo:7",
+          "task_label": "7",
+          "task_title": "Integrate `main.py`, run full smoke validation, and save evidence",
+          "session_id": "opencode:ses_13b2888daffeJJyfSd672Cdg0b",
+          "agent": "Sisyphus-Junior",
+          "category": "unspecified-high",
+          "updated_at": "2026-06-14T06:40:07.784Z",
+          "started_at": "2026-06-14T06:40:07.784Z",
+          "status": "running"
+        },
+        "final-wave:f1": {
+          "task_key": "final-wave:f1",
+          "task_label": "F1",
+          "task_title": "Plan Compliance Audit — oracle",
+          "session_id": "opencode:ses_13a774c27ffeTv1yA5V8S5VBKW",
+          "agent": "Sisyphus-Junior",
+          "category": "unspecified-high",
+          "started_at": "2026-06-14T07:00:24.326Z",
+          "status": "running",
+          "updated_at": "2026-06-14T10:44:08.076Z"
+        }
+      },
+      "ended_at": "2026-06-14T10:44:56.639Z",
+      "elapsed_ms": 18576125
+    }
+  },
+  "active_plan": "/home/kyae-dev/Repos/self/yolo26-nano/.omo/plans/yolo26-nano-product-recognition.md",
+  "started_at": "2026-06-14T05:35:20.514Z",
+  "status": "completed",
+  "updated_at": "2026-06-14T10:44:56.640Z",
+  "session_ids": [
+    "opencode:ses_13bd5573cffeppFypqtPUywzXE",
+    "opencode:ses_13b2202a3ffe1t3zRQoDuPbFkA",
+    "opencode:ses_13b220127ffe3uv3fS2bQfWz2y",
+    "opencode:ses_13b21ffd2ffe9TODaZcYNGPA7F",
+    "opencode:ses_13b21fdaeffexQ3VylC9Atqg38",
+    "opencode:ses_13b21fd73ffe8HC0j3M2cbHLI2",
+    "opencode:ses_13a7752bbffehu6TMzaW7f5ha6",
+    "opencode:ses_13a774f18ffefkgZ8xsLvKC4dG",
+    "opencode:ses_13a774c7effepQfmfphYsPwjZc",
+    "opencode:ses_13a774c27ffeTv1yA5V8S5VBKW"
+  ],
+  "session_origins": {
+    "opencode:ses_13bd5573cffeppFypqtPUywzXE": "direct",
+    "opencode:ses_13b2202a3ffe1t3zRQoDuPbFkA": "appended",
+    "opencode:ses_13b220127ffe3uv3fS2bQfWz2y": "appended",
+    "opencode:ses_13b21ffd2ffe9TODaZcYNGPA7F": "appended",
+    "opencode:ses_13b21fdaeffexQ3VylC9Atqg38": "appended",
+    "opencode:ses_13b21fd73ffe8HC0j3M2cbHLI2": "appended",
+    "opencode:ses_13a7752bbffehu6TMzaW7f5ha6": "appended",
+    "opencode:ses_13a774f18ffefkgZ8xsLvKC4dG": "appended",
+    "opencode:ses_13a774c7effepQfmfphYsPwjZc": "appended",
+    "opencode:ses_13a774c27ffeTv1yA5V8S5VBKW": "appended"
+  },
+  "plan_name": "yolo26-nano-product-recognition",
+  "task_sessions": {
+    "todo:1": {
+      "task_key": "todo:1",
+      "task_label": "1",
+      "task_title": "Create beginner project scaffold and learning guide",
+      "session_id": "opencode:ses_13b5e6277ffe3hC8QTLD74ohAf",
+      "agent": "Sisyphus-Junior",
+      "category": "writing",
+      "updated_at": "2026-06-14T05:38:24.596Z",
+      "started_at": "2026-06-14T05:38:24.596Z",
+      "status": "running"
+    },
+    "todo:2": {
+      "task_key": "todo:2",
+      "task_label": "2",
+      "task_title": "Add dataset config, dataset guide, and YOLO label validator",
+      "session_id": "opencode:ses_13b5e617fffeo0c1SK8Ks4lFL0",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "updated_at": "2026-06-14T05:48:00.231Z",
+      "started_at": "2026-06-14T05:48:00.231Z",
+      "status": "running"
+    },
+    "todo:4": {
+      "task_key": "todo:4",
+      "task_label": "4",
+      "task_title": "Add data collection, Roboflow annotation, and local fallback notebook lesson",
+      "session_id": "opencode:ses_13b52c4b3ffeN6YHKElyuBV4oq",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "started_at": "2026-06-14T05:51:47.479Z",
+      "status": "running",
+      "updated_at": "2026-06-14T05:53:06.814Z"
+    },
+    "todo:5": {
+      "task_key": "todo:5",
+      "task_label": "5",
+      "task_title": "Add CPU-safe training and validation tutorial cells",
+      "session_id": "opencode:ses_13b4e1d1affeMooHhdYnmOwqdH",
+      "agent": "Sisyphus-Junior",
+      "category": "unspecified-high",
+      "updated_at": "2026-06-14T05:59:06.699Z",
+      "started_at": "2026-06-14T05:59:06.699Z",
+      "status": "running"
+    },
+    "todo:6": {
+      "task_key": "todo:6",
+      "task_label": "6",
+      "task_title": "Add prediction, evidence, troubleshooting, and advanced YOLO26 note",
+      "session_id": "opencode:ses_13b48a468ffeXfTCubvf8RqH6t",
+      "agent": "Sisyphus-Junior",
+      "category": "quick",
+      "started_at": "2026-06-14T06:02:08.470Z",
+      "status": "running",
+      "updated_at": "2026-06-14T06:33:59.019Z"
+    },
+    "todo:7": {
+      "task_key": "todo:7",
+      "task_label": "7",
+      "task_title": "Integrate `main.py`, run full smoke validation, and save evidence",
+      "session_id": "opencode:ses_13b2888daffeJJyfSd672Cdg0b",
+      "agent": "Sisyphus-Junior",
+      "category": "unspecified-high",
+      "updated_at": "2026-06-14T06:40:07.784Z",
+      "started_at": "2026-06-14T06:40:07.784Z",
+      "status": "running"
+    },
+    "final-wave:f1": {
+      "task_key": "final-wave:f1",
+      "task_label": "F1",
+      "task_title": "Plan Compliance Audit — oracle",
+      "session_id": "opencode:ses_13a774c27ffeTv1yA5V8S5VBKW",
+      "agent": "Sisyphus-Junior",
+      "category": "unspecified-high",
+      "started_at": "2026-06-14T07:00:24.326Z",
+      "status": "running",
+      "updated_at": "2026-06-14T10:44:08.076Z"
+    }
+  },
+  "agent": "atlas",
+  "ended_at": "2026-06-14T10:44:56.639Z",
+  "elapsed_ms": 18576125
+}

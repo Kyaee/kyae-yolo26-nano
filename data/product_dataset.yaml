@@ -1,0 +1,7 @@
+path: data/products
+train: images/train
+val: images/val
+names:
+  - product_a
+  - product_b
+  - product_c

@@ -1,0 +1,9 @@
+Task 2 acceptance passed.
+
+Verified checks:
+- data/product_dataset.yaml exists with product_a, product_b, product_c and relative data/products paths.
+- data/README.md documents MVP size, recommended size, YOLO label format, empty-label behavior, Roboflow guidance, and local fallback layout.
+- scripts/validate_yolo_dataset.py exists and compiles with: python -m py_compile scripts/validate_yolo_dataset.py
+- Empty scaffold validation passes with: python scripts/validate_yolo_dataset.py --data data/product_dataset.yaml --allow-empty
+- Allow-empty output: dataset yaml ok: 3 class(es), 0 image(s), root=/home/kyae-dev/Repos/self/yolo26-nano/data/products (allow-empty scaffold)
+- Malformed label fixture is rejected; evidence saved in .omo/evidence/task-2-bad-label-command.txt with width=1.5 normalized-coordinate failure.

@@ -1,0 +1,31 @@
+Task 7 acceptance summary
+
+Files changed:
+- main.py
+- .omo/evidence/task-7-main-acceptance.txt
+- .omo/evidence/task-7-main-output-check.txt
+- .omo/evidence/task-7-no-auto-train.txt
+- .omo/evidence/task-7-py-compile.txt
+- .omo/evidence/task-7-validator-allow-empty.txt
+- .omo/evidence/task-7-ultralytics-import.txt
+- .omo/evidence/task-7-notebook-nbconvert.txt
+- .omo/evidence/task-7-notebook-python-nbconvert.txt
+- .omo/evidence/task-7-prediction-smoke.txt
+- .omo/evidence/task-7-full-smoke.txt
+- .omo/evidence/task-7-notebook-blocker.txt
+- .omo/evidence/prediction-smoke-blocker.txt
+
+Launcher acceptance:
+- python main.py output mentions notebooks/01_product_detection_yolo26n.ipynb.
+- python main.py output includes four smoke commands, including python -m py_compile, validate_yolo_dataset.py, ultralytics import, and jupyter nbconvert.
+- python main.py did not create runs/detect/train.
+
+Passed smoke commands:
+- python main.py > .omo/evidence/task-7-main-acceptance.txt
+- python -m py_compile main.py scripts/validate_yolo_dataset.py
+- python scripts/validate_yolo_dataset.py --data data/product_dataset.yaml --allow-empty
+
+Blocked smoke commands:
+- python -c "import ultralytics; print(ultralytics.__version__)" blocked because ultralytics is not installed.
+- jupyter nbconvert --to notebook --execute notebooks/01_product_detection_yolo26n.ipynb --output /tmp/yolo26n_product_smoke.ipynb blocked because jupyter/nbconvert is not installed in this environment.
+- Prediction smoke command blocked because ultralytics is not installed.

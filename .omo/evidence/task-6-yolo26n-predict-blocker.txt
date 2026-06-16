@@ -1,0 +1,4 @@
+Task 6 prediction smoke blocker
+
+Local prediction smoke could not run because `ultralytics` is not installed in this environment.
+The notebook prediction flow is still documented and points to `runs/detect/train*/weights/best.pt` with a `yolo26n.pt` smoke fallback.

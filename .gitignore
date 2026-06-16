@@ -1,1 +1,15 @@
-.venv
+.venv/
+__pycache__/
+*.py[cod]
+*.pt
+runs/
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*.tmp
+*.swp
+*.bak
+data/products/**
+!data/products/
+!data/products/**/
+!data/products/**/.gitkeep
+!data/products/**/README.md

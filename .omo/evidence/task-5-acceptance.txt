@@ -1,0 +1,10 @@
+Task 5 acceptance evidence
+
+cpu smoke settings: exit 0
+validator preflight wording: exit 0
+validation metric wording: exit 0
+
+Notebook JSON: passed via json.load
+Dataset scaffold validator: passed with --allow-empty for scaffold only
+Training cell uses model='yolo26n.pt', data='data/product_dataset.yaml', epochs=1, imgsz=320, device='cpu'.
+Validation wording explains precision, recall, mAP, and confusion between classes without promising useful smoke-dataset accuracy.

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from pathlib import Path; from PIL import Image; from ultralytics import YOLO; img = Path('.omo/evidence/prediction-smoke-input.jpg'); img.parent.mkdir(parents=True, exist_ok=True); Image.new('RGB', (320, 320), color='white').save(img); YOLO('yolo26n.pt').predict(source=str(img), save=True, project='.omo/evidence/prediction-smoke', name='predict', exist_ok=True); assert any(Path('.omo/evidence/prediction-smoke/predict').glob('*')); print('prediction artifact ok')
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'ultralytics'

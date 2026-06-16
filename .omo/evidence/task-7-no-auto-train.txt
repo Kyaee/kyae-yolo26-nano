@@ -1,0 +1,1 @@
+test ! -d runs/detect/train passed; python main.py did not create a training output directory.

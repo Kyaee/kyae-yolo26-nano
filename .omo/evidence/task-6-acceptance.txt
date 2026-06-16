@@ -1,0 +1,8 @@
+Task 6 acceptance evidence
+
+Static notebook checks passed:
+- notebook JSON loads successfully
+- notebook contains `runs/detect/predict`
+- notebook contains `best.pt`
+- notebook contains prediction troubleshooting language
+- notebook contains the advanced YOLO26 NMS-free note

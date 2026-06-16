@@ -1,0 +1,1 @@
+dataset yaml error: /tmp/yolo_bad_labels/labels/train/bad.txt:1: width=1.5 is not a normalized coordinate in 0-1

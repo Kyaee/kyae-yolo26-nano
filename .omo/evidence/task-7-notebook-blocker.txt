@@ -1,0 +1,16 @@
+Task 7 notebook execution blocker
+
+Command attempted:
+jupyter nbconvert --to notebook --execute notebooks/01_product_detection_yolo26n.ipynb --output /tmp/yolo26n_product_smoke.ipynb
+
+Observed result:
+zsh:1: command not found: jupyter
+
+Fallback attempted:
+python -m nbconvert --to notebook --execute notebooks/01_product_detection_yolo26n.ipynb --output /tmp/yolo26n_product_smoke.ipynb
+
+Observed fallback result:
+/usr/bin/python: No module named nbconvert
+
+Why this is a blocker:
+Notebook execution cannot start in this environment because the Jupyter/nbconvert toolchain is not installed. The separate Ultralytics import smoke also fails with ModuleNotFoundError: No module named 'ultralytics', and the dataset validator reports 0 scaffold images in allow-empty mode. The notebook was not modified for this task because the blocker is the local smoke environment, not a notebook lesson change.

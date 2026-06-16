@@ -1,0 +1,5 @@
+Task 4 acceptance evidence
+
+- Verified `data/README.md` includes Roboflow workflow guidance, `data/products/images/train`, and dataset size guidance.
+- Verified `notebooks/01_product_detection_yolo26n.ipynb` includes placeholder classes and the `data/products/` layout discussion.
+- Verified the task 4 acceptance grep checks passed.
